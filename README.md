@@ -1,4 +1,5 @@
-# Building Machine Learning Projects with TensorFlow
+# Building Machine Learning Projects with TensorFlow (Python 3.x)
+
 This is the code repository for [Building Machine Learning Projects with TensorFlow](https://www.packtpub.com/big-data-and-business-intelligence/building-machine-learning-projects-tensorflow?utm_source=github&utm_medium=repository&utm_campaign=9781786466587), published by [Packt](https://www.packtpub.com). It contains all the supporting project files necessary to work through the book from start to finish.
 ## Instructions and Navigations
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
@@ -9,7 +10,8 @@ The code will look like the following:
 ```
 >>> import tensorflow as tf 
 >>> tens1 = tf.constant([[[1,2],[2,3]],[[3,4],[5,6]]]) 
->>> print sess.run(tens1)[1,1,0] 
+>>> sess = tf.Session()
+>>> print(sess.run(tens1)[1,1,0])
 5 
 ```
 
